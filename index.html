@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" class="has-background-info">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Planner - Plan your day!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body class="has-background-info">
+<div class="container">
+<p class="is-size-3 has-text-light">Day Planner</p>
+<div class="box has-background-primary">
+    <div class="field is-horizontal">
+        <div class="field-label">
+            <label class="label">Wakeup:</label>
+        </div>
+        <div class="field-body">
+            <div class="field is-narrow">
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="wakeup" value="1" checked>
+                        Early (7:00 AM)
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="wakeup" value="2">
+                        Delayed (8:00 AM)
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="wakeup" value="3">
+                        Late (9:00 AM)
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="field is-horizontal">
+        <div class="field-label">
+            <label class="label">Study:</label>
+        </div>
+        <div class="field-body">
+            <div class="field is-narrow">
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="study" value="0" checked>
+                        No
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="study" value="4">
+                        Moderate (4 Hours)
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="study" value="6">
+                        Extreme (6 Hours)
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="field is-horizontal">
+        <div class="field-label">
+            <label class="label">Break:</label>
+        </div>
+        <div class="field-body">
+            <div class="field is-narrow">
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="break" value="0.5">
+                        Once
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="break" value="1">
+                        Every Hour
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="break" value="2">
+                        Every 2 Hours
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="field is-horizontal">
+        <div class="field-label">
+            <label class="label">Phone:</label>
+        </div>
+        <div class="field-body">
+            <div class="field is-narrow">
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="phone" value="0" checked>
+                        No
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="phone" value="2">
+                        Good (2 Hours)
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="phone" value="4">
+                        Extreme (4 Hours)
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal">
+        <div class="field-label">
+            <label class="label">Activities:</label>
+        </div>
+        <div class="field-body">
+            <div class="field is-narrow">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox" name="workout" value="1">
+                        Workout
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="medicate" value="1">
+                        Piano
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" name="nap" value="1">
+                        Draw
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="field is-horizontal">
+        <div class="field-label">
+            <label class="label">Sleep:</label>
+        </div>
+        <div class="field-body">
+            <div class="field is-narrow">
+                <div class="control">
+                    <label class="radio">
+                        <input type="radio" name="sleep" value="1" checked>
+                        Early (9:00 PM)
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="sleep" value="2">
+                        Moderate (10:00 PM)
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="sleep" value="3">
+                        Late (11:00 PM)
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <button onclick="generate()" class="button is-primary">Plan</button>
+</div>
+<script src="generate.js"></script>
+</body>
+</html>
